@@ -19,6 +19,19 @@ public class PuzzleJava {
             return alphabet[randomNum];
     }
 
+    public String pass(){
+        String password = new String();
+        for(int i = 0; i < 8; i++ ){
+            char randomChar = alphabet();
+            password += randomChar;
+        }
+        return password;
+    }
+
+
+
+
+
     // public ArrayList<Character> getAlpha() {
     //     ArrayList<Character> letters = new ArrayList<Character>(); 
     //     for (int i = 0; i < 10; i++){

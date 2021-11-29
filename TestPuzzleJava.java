@@ -13,6 +13,9 @@ public class TestPuzzleJava{
 
             char randomChar = generator.alphabet();
             System.out.println(randomChar);
+
+            String password = generator.pass();
+            System.out.println(password);
         
     }
 
