@@ -10,6 +10,9 @@ public class TestPuzzleJava{
             PuzzleJava generator = new PuzzleJava();
             ArrayList<Integer> randomRolls = generator.getTenRolls();
             System.out.println(randomRolls);
+
+            char randomChar = generator.alphabet();
+            System.out.println(randomChar);
         
     }
 
