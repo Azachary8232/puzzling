@@ -17,6 +17,8 @@ public class TestPuzzleJava{
             String password = generator.pass();
             System.out.println(password);
         
+            ArrayList<String> passwords = generator.randPasswords(8);
+            System.out.println(passwords);
     }
 
 

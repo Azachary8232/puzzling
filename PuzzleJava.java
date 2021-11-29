@@ -15,7 +15,7 @@ public class PuzzleJava {
 
     public char alphabet() {
         char[] alphabet = {'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'};
-            int randomNum = randmachine.nextInt(26)+1;
+            int randomNum = randmachine.nextInt(26);
             return alphabet[randomNum];
     }
 
@@ -26,6 +26,14 @@ public class PuzzleJava {
             password += randomChar;
         }
         return password;
+    }
+
+    public ArrayList<String> randPasswords(int amount){
+        ArrayList<String> randomPasswords = new ArrayList<String>();
+        for(int i = 0; i < amount; i++){
+            randomPasswords.add(pass());
+        }
+        return randomPasswords;
     }
 
 
